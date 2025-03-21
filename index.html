@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <section id="kalkulator" class="mx-auto bg-slate-600 mt-10 w-full py-2">
+        <div class="px-2 ">
+            <input type="text" class="bg-white w-full h-[50px] text-3xl" disabled id="output">
+        </div>
+        <div class="grid grid-cols-4 gap-4 mt-7 px-2">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">/</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">*</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+
+            <button class="bg-amber-300 text-white p-5 rounded-md  col-span-2 active:bg-amber-400">0</button>
+            <button class="btn">.</button>
+            <button class="btn">+</button>
+
+            <button id="clear" class="col-span-2 p-5 text-white bg-red-400 rounded-md active:bg-red-500">C</button>
+            <button id="Hasil" class="col-span-2 p-5 text-white bg-green-400 rounded-md active:bg-green-500">=</button>
+            <button id="hapus" class="col-span-4 p-5 text-white bg-orange-400 rounded-md active:bg-orange-500">&#9003</button>
+        </div>
+    </section>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
