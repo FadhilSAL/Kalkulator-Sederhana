@@ -15,7 +15,7 @@ buttons.forEach((button)=>{
 
         if(value !== 'C' && value !== '='){
           
-               rawValue += value;
+               rawValue = value;
 
             
                output.value += rawValue
@@ -36,8 +36,8 @@ operators.forEach((operator)=>{
 })
 
 clear.addEventListener('click',function(){
-    currentInput = '';
-    output.value = currentInput;
+    rawValue = '';
+    output.value = rawValue;
 })
 
 
