@@ -12,7 +12,11 @@ buttons.forEach((button)=>{
         const value = button.textContent;
 
         if(value !== 'C' && value !== '='){
-            currentInput += value;
+            let rawValue = currentInput.replace(/,/g,'');
+
+            rawValue += value
+     
+            currentInput = Number(rawValue).toLocaleString("en-US");
             output.value = currentInput
         }
       
@@ -37,7 +41,7 @@ output.value = currentInput;
 
 hasil.addEventListener('click',function(){
     try{
-        currentInput = eval(currentInput);
+        currentInput =  eval(currentInput);
         output.value = currentInput
     }catch(err){
         output.value = 'Error'
