@@ -1871,7 +1871,20 @@
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
   }
+  .operator {
+    border-radius: var(--radius-md);
+    background-color: var(--color-blue-400);
+    padding: calc(var(--spacing) * 5);
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+  }
   .btn:active {
+    background-color: var(--color-blue-500);
+  }
+  .operator:active {
     background-color: var(--color-blue-500);
   }
 }
